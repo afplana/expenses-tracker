@@ -1,0 +1,60 @@
+@import '../../global-styles.scss';
+
+.jumbotron-min {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(50deg, rgb(215, 190, 250), rgb(175, 200, 240));
+
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: 'Lato';
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        color: $dark;
+    }
+}
+
+.budget {
+    display: flex;
+    height: 160px;
+    background-color: $dark;
+
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    h2 {
+        margin-right: 5px;
+        font-family: 'Lato';
+        font-size: 45px;
+        letter-spacing: 2px;
+        font-weight: normal;
+        color: $red-light;
+
+        &.green {
+            color: lighten($green, $amount: 20%);
+        }
+
+        &.red {
+            color: lighten($red, $amount: 20%);;
+            
+        }
+    }
+}
+
+.add-operation {
+    display: flex;
+
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    .operation-container {
+        width: 680px;
+        height: 20px; 
+    }
+}
