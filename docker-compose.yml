@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  expenses-tracker-fe:
+    container_name: expenses-tracker
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - '4300:80'
